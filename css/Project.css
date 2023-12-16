@@ -134,13 +134,13 @@ nav ul li a:hover{
     opacity: 0;
 }
 
-/* @media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
     nav ul{
         width: 20%;
         
     }
     
-} */
+}
 
 @media screen and (max-width:768px) {
 
@@ -165,7 +165,7 @@ nav ul li a:hover{
         z-index: -1;
         transform: translate(70vh);
         transition: all 1s;
-        /* transform: translateY(-100px); */
+
     
     }
 
@@ -358,7 +358,6 @@ h5{
 
     background: rgb(43, 42, 42);
     width: 100%;
-    /* font-size: 50px; */
     padding: 100px 0px;
 
 }
