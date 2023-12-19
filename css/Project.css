@@ -78,104 +78,6 @@ nav ul li a:hover{
 }
 
 
-.menu-toggle{
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-
-}
-
-
-.menu-toggle span{
-    display: hidden;
-    width: 28px;
-    height: 3px;
-    background-color:rgb(255, 255, 255);
-    border-radius: 3px;
-    transition: all 0.5s;
-
-}
-
-
-.menu-toggle input{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 5px;
-    top: 3px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.menu-toggle span:nth-child(2){
-    transform-origin: 0 0;
-    
-}
-
-.menu-toggle span:nth-child(4){
-    transform-origin: 0 100%;
-}
-
-
-.menu-toggle input:checked ~ span:nth-child(2){
-    transform: rotate(45deg) translate(-1px,-1px);
-    background-color:white;
-}
-
-.menu-toggle input:checked ~ span:nth-child(4){
-    transform: rotate(-45deg ) translate(-1px,0);
-    background-color:white;
-}
-
-.menu-toggle input:checked ~ span:nth-child(3){
-    transform: scale(0);
-    opacity: 0;
-}
-
-@media screen and (max-width:600px) {
-    nav ul{
-        width: 20%;
-        
-    }
-    
-}
-
-@media screen and (max-width:768px) {
-
-    .menu-toggle{
-        display: flex;
-    
-        
-    }
-
-    
-    
-    nav ul{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 0%;
-        height: 100vh;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-        z-index: -1;
-        transform: translate(70vh);
-        transition: all 1s;
-
-    
-    }
-
-    nav ul.slide {
-        transform: translateX(0);
-    }
-    
-}
-
-
 
 .content{
     position: absolute;
@@ -242,6 +144,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -249,8 +152,10 @@ h4{
     color: white;
     letter-spacing: 2px;
     font-size: 70px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-transform: capitalize;
+    /* text-align: center; */
+
     
 
 }
@@ -262,6 +167,7 @@ h4{
     font-size: 15px;
     margin-bottom: 20px;
     text-transform: capitalize;
+    /* text-align: center; */
 
 }
 
@@ -282,6 +188,7 @@ button{
     padding: 13px 30px;
     border-radius: 30px;
     transition: 1s;
+   
 
 }
 
@@ -303,6 +210,12 @@ button:hover{
 
 }
 
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .title h2{
     color: white;
     font-size: 75px;
@@ -313,8 +226,11 @@ button:hover{
     
 }
 
+
+
 .box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 400px;
@@ -378,6 +294,7 @@ h5{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .kontak-saya .button-2{
@@ -452,4 +369,123 @@ footer p:nth-child(2){
 .social:hover{
     transform: scale(1.2);
     transition: 1s;
+}
+
+
+.menu-toggle{
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+
+.menu-toggle span{
+    display: hidden;
+    width: 28px;
+    height: 3px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.5s;
+
+}
+
+
+.menu-toggle input{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+    top: 3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+    
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px);
+    background-color:white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg ) translate(-1px,0);
+    background-color:white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+@media screen and (max-width:600px) {
+    nav ul{
+        width: 20%;  
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+
+    .menu-toggle{
+        display: flex;
+    
+        
+    }
+
+    
+    
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        z-index: -1;
+        transform: translate(70vh);
+        transition: all 1s;
+
+    
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+
+
+    .about-text h2{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .about-text h5{
+        text-align: center;
+    }
+
+    .about-text p{
+        text-align: center;
+    }
+
+    
+    .about-text{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
 }
